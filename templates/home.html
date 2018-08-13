@@ -10,15 +10,21 @@
         <!-- Add Bootstrap CSS to the page -->
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
 
+        <!-- My own custom styles -->
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
     </head>
 
     <body>
 
-        <p>This is a Bootstrap Tutorial</p>
+        <!-- Pick one of the following: container-fluid OR container -->
+        <div class="container-fluid" style="background: lightcyan">
+            <code>.fluid-container</code>
+        </div>
 
-        <!-- Add JQuery and Bootstrap JS to the page -->
-        <!-- JQuery MUST BE BEFORE BOOTSTRAP -->
+        <div class="container" style="background: pink">
+            <code>.container</code>
+        </div>
+
         <script src="{{ url_for('static', filename='jquery.js') }}"></script>
         <script src="{{ url_for('static', filename='bootstrap.bundle.js') }}"></script>
     </body>
