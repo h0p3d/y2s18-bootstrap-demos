@@ -15,9 +15,28 @@
     </head>
 
     <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6" style="background: lightblue">
+                    <p>I am an instructor</p>
+                </div>
+    
+                <div class="col-12 col-md-6" style="background: lightgoldenrodyellow">
+                    <p>I am a student</p>
+                </div>
+            </div> <!-- /.row -->
+    
+            <div class="row">
+                <div class="col-sm-8 col-md-9" style="background: lightpink">
+                    <p>This is the main content</p>
+                </div>
 
-        <p>This is a Bootstrap Tutorial</p>
-
+                <div class="col-sm-4 col-md-3" style="background: lightcyan">
+                    <p>This is the sidebar</p>
+                </div>
+            </div> <!-- /.row -->
+        </div>
+         
         <!-- Add JQuery and Bootstrap JS to the page -->
         <!-- JQuery MUST BE BEFORE BOOTSTRAP -->
         <script src="{{ url_for('static', filename='jquery.js') }}"></script>
